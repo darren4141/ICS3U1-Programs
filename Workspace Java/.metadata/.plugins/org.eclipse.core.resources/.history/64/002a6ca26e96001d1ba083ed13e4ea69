@@ -1,0 +1,24 @@
+import java.applet.Applet;
+import java.awt.*;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+
+
+public class TimerTest extends Applet{
+	
+	public void paint (Graphics g){
+		int heartX = 100;
+		int heartY = 100;
+		int heartSizeX = 40;
+		int heartSizeY = 30;
+		int [] x = {heartX, heartX-(heartSizeX/2), heartX+(heartSizeX/2)};
+		int [] y = {heartY, heartY-heartSizeY, heartY-heartSizeY};
+		
+		g.fillPolygon(x, y, 3);
+		g.fillOval(heartX-(heartSizeX/4), heartY-heartSizeY, heartSizeX/4, heartSizeX/4);
+	}
+
+	
+	
+	
+}
